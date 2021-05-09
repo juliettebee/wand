@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		869E9B3926485E910081B2A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869E9B3726485E910081B2A2 /* Main.storyboard */; };
 		869E9B3B26485E930081B2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 869E9B3A26485E930081B2A2 /* Assets.xcassets */; };
 		869E9B3E26485E930081B2A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869E9B3C26485E930081B2A2 /* LaunchScreen.storyboard */; };
+		869E9B4726485EAC0081B2A2 /* WandKit in Frameworks */ = {isa = PBXBuildFile; productRef = 869E9B4626485EAC0081B2A2 /* WandKit */; };
+		86D80C9E26486ED800BBE936 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80C9D26486ED800BBE936 /* State.swift */; };
+		86D80CA126486FA000BBE936 /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CA026486FA000BBE936 /* ConnectingViewController.swift */; };
+		86D80CA326486FDF00BBE936 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CA226486FDF00BBE936 /* UIViewControllerExtensions.swift */; };
+		86D80CA5264870C800BBE936 /* ConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CA4264870C800BBE936 /* ConstraintExtension.swift */; };
+		86D80CA92648731D00BBE936 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CA82648731D00BBE936 /* HomeViewController.swift */; };
+		86D80CAB2648735800BBE936 /* SpellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CAA2648735800BBE936 /* SpellsViewController.swift */; };
+		86D80CAD264873F400BBE936 /* SpellsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CAC264873F400BBE936 /* SpellsTableViewController.swift */; };
+		86D80CAF2648743300BBE936 /* SpellCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CAE2648743300BBE936 /* SpellCreatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,14 @@
 		869E9B3A26485E930081B2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		869E9B3D26485E930081B2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		869E9B3F26485E930081B2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86D80C9D26486ED800BBE936 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		86D80CA026486FA000BBE936 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
+		86D80CA226486FDF00BBE936 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		86D80CA4264870C800BBE936 /* ConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintExtension.swift; sourceTree = "<group>"; };
+		86D80CA82648731D00BBE936 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		86D80CAA2648735800BBE936 /* SpellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewController.swift; sourceTree = "<group>"; };
+		86D80CAC264873F400BBE936 /* SpellsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsTableViewController.swift; sourceTree = "<group>"; };
+		86D80CAE2648743300BBE936 /* SpellCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCreatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869E9B4726485EAC0081B2A2 /* WandKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,8 @@
 		869E9B3026485E910081B2A2 /* wand */ = {
 			isa = PBXGroup;
 			children = (
+				86D80C9F26486F8F00BBE936 /* ViewControllers */,
+				86D80C9C26486ECD00BBE936 /* Structs and Enums */,
 				869E9B3126485E910081B2A2 /* AppDelegate.swift */,
 				869E9B3326485E910081B2A2 /* SceneDelegate.swift */,
 				869E9B3526485E910081B2A2 /* ViewController.swift */,
@@ -65,6 +85,36 @@
 				869E9B3F26485E930081B2A2 /* Info.plist */,
 			);
 			path = wand;
+			sourceTree = "<group>";
+		};
+		86D80C9C26486ECD00BBE936 /* Structs and Enums */ = {
+			isa = PBXGroup;
+			children = (
+				86D80C9D26486ED800BBE936 /* State.swift */,
+				86D80CA226486FDF00BBE936 /* UIViewControllerExtensions.swift */,
+				86D80CA4264870C800BBE936 /* ConstraintExtension.swift */,
+			);
+			path = "Structs and Enums";
+			sourceTree = "<group>";
+		};
+		86D80C9F26486F8F00BBE936 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				86D80CA6264872F000BBE936 /* Home */,
+				86D80CA026486FA000BBE936 /* ConnectingViewController.swift */,
+				86D80CAE2648743300BBE936 /* SpellCreatorViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		86D80CA6264872F000BBE936 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				86D80CA82648731D00BBE936 /* HomeViewController.swift */,
+				86D80CAA2648735800BBE936 /* SpellsViewController.swift */,
+				86D80CAC264873F400BBE936 /* SpellsTableViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +133,9 @@
 			dependencies = (
 			);
 			name = wand;
+			packageProductDependencies = (
+				869E9B4626485EAC0081B2A2 /* WandKit */,
+			);
 			productName = wand;
 			productReference = 869E9B2E26485E910081B2A2 /* wand.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +163,9 @@
 				Base,
 			);
 			mainGroup = 869E9B2526485E910081B2A2;
+			packageReferences = (
+				869E9B4526485EAC0081B2A2 /* XCRemoteSwiftPackageReference "WandKit" */,
+			);
 			productRefGroup = 869E9B2F26485E910081B2A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +196,14 @@
 				869E9B3626485E910081B2A2 /* ViewController.swift in Sources */,
 				869E9B3226485E910081B2A2 /* AppDelegate.swift in Sources */,
 				869E9B3426485E910081B2A2 /* SceneDelegate.swift in Sources */,
+				86D80CA92648731D00BBE936 /* HomeViewController.swift in Sources */,
+				86D80CAB2648735800BBE936 /* SpellsViewController.swift in Sources */,
+				86D80C9E26486ED800BBE936 /* State.swift in Sources */,
+				86D80CAD264873F400BBE936 /* SpellsTableViewController.swift in Sources */,
+				86D80CA5264870C800BBE936 /* ConstraintExtension.swift in Sources */,
+				86D80CAF2648743300BBE936 /* SpellCreatorViewController.swift in Sources */,
+				86D80CA326486FDF00BBE936 /* UIViewControllerExtensions.swift in Sources */,
+				86D80CA126486FA000BBE936 /* ConnectingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		869E9B4526485EAC0081B2A2 /* XCRemoteSwiftPackageReference "WandKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/justnaa/WandKit";
+			requirement = {
+				branch = love;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		869E9B4626485EAC0081B2A2 /* WandKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 869E9B4526485EAC0081B2A2 /* XCRemoteSwiftPackageReference "WandKit" */;
+			productName = WandKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 869E9B2626485E910081B2A2 /* Project object */;
 }

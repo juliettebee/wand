@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WandKit",
+        "repositoryURL": "https://github.com/justnaa/WandKit",
+        "state": {
+          "branch": "love",
+          "revision": "878043ac05eadb8b7f2bd0f22a8cc4526832ffd6",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
