@@ -31,12 +31,7 @@ class ViewController: UIViewController {
                     case .home:
                         viewControllerToAdd = HomeViewController()
                 }
-                // Removing children
-                self.children.forEach {
-                    $0.willMove(toParent: nil)
-                    $0.view.removeFromSuperview()
-                    $0.removeFromParent()
-                }
+                self.removeAllSubViewControllers()
                 // Now adding the VC
                 self.addSubViewController(child: viewControllerToAdd)
             }

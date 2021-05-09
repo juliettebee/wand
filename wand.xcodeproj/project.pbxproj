@@ -22,6 +22,8 @@
 		86D80CAB2648735800BBE936 /* SpellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CAA2648735800BBE936 /* SpellsViewController.swift */; };
 		86D80CAD264873F400BBE936 /* SpellsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CAC264873F400BBE936 /* SpellsTableViewController.swift */; };
 		86D80CAF2648743300BBE936 /* SpellCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CAE2648743300BBE936 /* SpellCreatorViewController.swift */; };
+		86D80CB426487AED00BBE936 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CB326487AED00BBE936 /* UIViewExtensions.swift */; };
+		86D80CB726487F2000BBE936 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CB626487F2000BBE936 /* Spell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		86D80CAA2648735800BBE936 /* SpellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewController.swift; sourceTree = "<group>"; };
 		86D80CAC264873F400BBE936 /* SpellsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsTableViewController.swift; sourceTree = "<group>"; };
 		86D80CAE2648743300BBE936 /* SpellCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCreatorViewController.swift; sourceTree = "<group>"; };
+		86D80CB326487AED00BBE936 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		86D80CB626487F2000BBE936 /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +94,9 @@
 		86D80C9C26486ECD00BBE936 /* Structs and Enums */ = {
 			isa = PBXGroup;
 			children = (
+				86D80CB526487F0B00BBE936 /* Extensions */,
 				86D80C9D26486ED800BBE936 /* State.swift */,
-				86D80CA226486FDF00BBE936 /* UIViewControllerExtensions.swift */,
-				86D80CA4264870C800BBE936 /* ConstraintExtension.swift */,
+				86D80CB626487F2000BBE936 /* Spell.swift */,
 			);
 			path = "Structs and Enums";
 			sourceTree = "<group>";
@@ -115,6 +119,16 @@
 				86D80CAC264873F400BBE936 /* SpellsTableViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		86D80CB526487F0B00BBE936 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86D80CA226486FDF00BBE936 /* UIViewControllerExtensions.swift */,
+				86D80CA4264870C800BBE936 /* ConstraintExtension.swift */,
+				86D80CB326487AED00BBE936 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +217,8 @@
 				86D80CA5264870C800BBE936 /* ConstraintExtension.swift in Sources */,
 				86D80CAF2648743300BBE936 /* SpellCreatorViewController.swift in Sources */,
 				86D80CA326486FDF00BBE936 /* UIViewControllerExtensions.swift in Sources */,
+				86D80CB426487AED00BBE936 /* UIViewExtensions.swift in Sources */,
+				86D80CB726487F2000BBE936 /* Spell.swift in Sources */,
 				86D80CA126486FA000BBE936 /* ConnectingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
