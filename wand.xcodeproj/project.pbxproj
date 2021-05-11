@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		861173BC26496A8C0085BD7E /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861173BB26496A8C0085BD7E /* Direction.swift */; };
 		8692C05C264ABCF900F67D90 /* WPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8692C05B264ABCF900F67D90 /* WPoint.swift */; };
 		869E9B3226485E910081B2A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869E9B3126485E910081B2A2 /* AppDelegate.swift */; };
 		869E9B3426485E910081B2A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869E9B3326485E910081B2A2 /* SceneDelegate.swift */; };
@@ -29,7 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		861173BB26496A8C0085BD7E /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		8692C05B264ABCF900F67D90 /* WPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPoint.swift; sourceTree = "<group>"; };
 		869E9B2E26485E910081B2A2 /* wand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		869E9B3126485E910081B2A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				86D80CB526487F0B00BBE936 /* Extensions */,
 				86D80C9D26486ED800BBE936 /* State.swift */,
 				86D80CB626487F2000BBE936 /* Spell.swift */,
-				861173BB26496A8C0085BD7E /* Direction.swift */,
 				8692C05B264ABCF900F67D90 /* WPoint.swift */,
 			);
 			path = "Structs and Enums";
@@ -221,7 +218,6 @@
 				86D80CAB2648735800BBE936 /* SpellsViewController.swift in Sources */,
 				86D80C9E26486ED800BBE936 /* State.swift in Sources */,
 				86D80CAD264873F400BBE936 /* SpellsTableViewController.swift in Sources */,
-				861173BC26496A8C0085BD7E /* Direction.swift in Sources */,
 				86D80CA5264870C800BBE936 /* ConstraintExtension.swift in Sources */,
 				86D80CAF2648743300BBE936 /* SpellCreatorViewController.swift in Sources */,
 				86D80CA326486FDF00BBE936 /* UIViewControllerExtensions.swift in Sources */,
