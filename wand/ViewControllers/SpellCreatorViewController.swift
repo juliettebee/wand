@@ -16,7 +16,7 @@ class SpellCreatorViewController : UIViewController {
     var recording = false
     var record : [WPoint] = []
     var page = 0
-    var spell = Spell(points: [], url: NSURL.init())
+    var spell = Spell(points: [], url: "")
     var starting = true
     var startingPoint: Point!
     
@@ -67,9 +67,17 @@ class SpellCreatorViewController : UIViewController {
     
     func getURL () {
         if self.input.text != nil {
-            if let url = NSURL.init(string: self.input.text!) {
-                spell.url = url
-                spell.save()
+            if NSURL.init(string: self.input.text!) != nil {
+                spell.url = self.input.text!
+                do {
+                    try spell.save()
+                } catch {
+                    let alert = UIAlertController(title: "Error!", message: "Error saving \(error)", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }
+                // TODO: return to navigation and update
                 return
             }
         }

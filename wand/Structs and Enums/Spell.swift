@@ -8,12 +8,25 @@
 import Foundation
 import WandKit
 
-struct Spell {
+struct Spell : Codable {
     
     var points: [WPoint]
-    var url: NSURL
+    var url: String
+    var name = UUID.init().uuidString
     
-    mutating func save () {
-        print(self.points)
+    func save () throws {
+        // Writing to file
+        let save = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(name)
+        
+        do {
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(self)
+            try jsonData.write(to: save)
+        } catch {
+            throw error
+        }
+        
+        print(save)
+        print("Saved")
     }
 }

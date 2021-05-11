@@ -12,7 +12,7 @@ import Foundation
 // So why don't you use 8 bit number instead of int in this?
 // I like being able to have more than 511 numbers.
 
-struct WPoint {
+struct WPoint : Codable {
     var x: Int
     var y: Int
 }
