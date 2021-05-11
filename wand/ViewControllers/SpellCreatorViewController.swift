@@ -14,9 +14,11 @@ class SpellCreatorViewController : UIViewController {
     var label: UILabel!
     var input: UITextField!
     var recording = false
-    var record : [Point] = []
+    var record : [WPoint] = []
     var page = 0
     var spell = Spell(points: [], url: NSURL.init())
+    var starting = true
+    var startingPoint: Point!
     
     override func viewDidLoad () {
         super.viewDidLoad()
@@ -99,7 +101,16 @@ extension SpellCreatorViewController : WandDelegate {
     
     func location (_ point: Point) {
         if recording {
-            record.append(point)
+            if starting {
+                self.startingPoint = point
+                self.starting = false
+                return
+            }
+            
+            let newX = Int(point.x) - Int(startingPoint.x)
+            let newY = Int(point.y) - Int(startingPoint.y)
+            
+            record.append(WPoint(x: newX, y: newY))
         }
     }
     

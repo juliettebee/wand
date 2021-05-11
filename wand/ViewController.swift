@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad () {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         Wand.shared.delegates.append(self)
         
         NotificationCenter.default.addObserver(self, selector: #selector(updateState(_:)), name: NSNotification.Name(rawValue: "updateState"), object: nil)

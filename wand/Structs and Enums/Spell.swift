@@ -9,10 +9,11 @@ import Foundation
 import WandKit
 
 struct Spell {
-    var points: [Point]
+    
+    var points: [WPoint]
     var url: NSURL
     
-    func save () {
-        
+    mutating func save () {
+        print(self.points)
     }
 }
