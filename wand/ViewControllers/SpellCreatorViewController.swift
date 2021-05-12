@@ -77,7 +77,7 @@ class SpellCreatorViewController : UIViewController {
                     }))
                     self.present(alert, animated: true, completion: nil)
                 }
-                // TODO: return to navigation and update
+                self.navigationController?.popViewController(animated: true)
                 return
             }
         }

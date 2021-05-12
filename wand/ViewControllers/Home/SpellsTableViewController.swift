@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SpellsTableViewController : UIViewController {
+class SpellsTableViewController : UITableViewController {
     
     override func viewDidLoad () {
         super.viewDidLoad()
