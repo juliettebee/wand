@@ -25,9 +25,6 @@ struct Spell : Codable {
         } catch {
             throw error
         }
-        
-        print(save)
-        print("Saved")
     }
 }
 
