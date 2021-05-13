@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		864517C3264DCED300FB285B /* SpellRunnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864517C2264DCED300FB285B /* SpellRunnerViewController.swift */; };
 		8692C05C264ABCF900F67D90 /* WPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8692C05B264ABCF900F67D90 /* WPoint.swift */; };
 		869E9B3226485E910081B2A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869E9B3126485E910081B2A2 /* AppDelegate.swift */; };
 		869E9B3426485E910081B2A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869E9B3326485E910081B2A2 /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		864517C2264DCED300FB285B /* SpellRunnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRunnerViewController.swift; sourceTree = "<group>"; };
 		8692C05B264ABCF900F67D90 /* WPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPoint.swift; sourceTree = "<group>"; };
 		869E9B2E26485E910081B2A2 /* wand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		869E9B3126485E910081B2A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				86D80CA82648731D00BBE936 /* HomeViewController.swift */,
 				86D80CAA2648735800BBE936 /* SpellsViewController.swift */,
 				86D80CAC264873F400BBE936 /* SpellsTableViewController.swift */,
+				864517C2264DCED300FB285B /* SpellRunnerViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				86D80CA5264870C800BBE936 /* ConstraintExtension.swift in Sources */,
 				86D80CAF2648743300BBE936 /* SpellCreatorViewController.swift in Sources */,
 				86D80CA326486FDF00BBE936 /* UIViewControllerExtensions.swift in Sources */,
+				864517C3264DCED300FB285B /* SpellRunnerViewController.swift in Sources */,
 				86D80CB426487AED00BBE936 /* UIViewExtensions.swift in Sources */,
 				86D80CB726487F2000BBE936 /* Spell.swift in Sources */,
 				86D80CA126486FA000BBE936 /* ConnectingViewController.swift in Sources */,

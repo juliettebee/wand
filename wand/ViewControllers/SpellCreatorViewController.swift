@@ -37,15 +37,6 @@ class SpellCreatorViewController : UIViewController {
         label.widthAnchor.constraint(from: self.view.widthAnchor, plus: 0)
         label.heightAnchor.constraint(from: self.view.heightAnchor, plus: 0)
         label.center = self.view.center
-        
-        NotificationCenter.default.post(name: Notification.Name("toggleSpellRecording"), object: nil)
-        
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-        NotificationCenter.default.post(name: Notification.Name("toggleSpellRecording"), object: nil)
     }
     
     func nextPage () {
