@@ -44,3 +44,7 @@ func loadSpells () throws -> [Spell] {
         throw error
     }
 }
+
+func getAndRunSpell (_ points: [WPoint]) {
+    print("get")
+}
