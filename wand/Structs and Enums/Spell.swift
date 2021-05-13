@@ -56,6 +56,9 @@ func getAndRunSpell (_ points: [WPoint]) throws {
         var i = 0
         var score = 0
         for point in spell.points {
+            if i > points.count - 1 {
+                break
+            }
             if !comparePoint(pointA: point, pointB: points[i], accuracy: accuracy) {
                 break
             }
@@ -66,22 +69,22 @@ func getAndRunSpell (_ points: [WPoint]) throws {
             found = spell
         }
     }
+    
+    print(found ?? "Not found")
 }
 
 func comparePoint (pointA: WPoint, pointB: WPoint, accuracy: Int) -> Bool {
     var xSame = false
     var ySame = false
-    for i in 0...accuracy {
-        if pointA.x == pointB.x {
+    for i in 0..<accuracy {
+        if pointA.x == pointB.x - i {
             xSame = true
-            print("accuracy: \(i)%")
         }
     }
     
-    for i in 0...accuracy {
-        if pointA.y == pointB.y {
+    for i in 0..<accuracy {
+        if pointA.y == pointB.y - i {
             ySame = true
-            print("accuracy: \(i)%")
         }
     }
     

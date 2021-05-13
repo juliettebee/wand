@@ -42,7 +42,7 @@ extension SpellRunnerViewController : WandDelegate {
     
     func location(_ point: Point) {
         if doSpellRecording {
-            if starting {
+            if startingPoint == nil {
                 self.startingPoint = point
                 self.starting = false
                 return
@@ -66,7 +66,6 @@ extension SpellRunnerViewController : WandDelegate {
                 self.present(alert, animated: true, completion: nil)
             }
             print("Done")
-            print(record)
         } else {
             self.starting.toggle()
             self.doSpellRecording.toggle()
