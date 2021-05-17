@@ -16,20 +16,25 @@ class HomeViewController : UITabBarController {
         
         let spellsViewController = SpellsViewController()
         let spellRunnerViewController = SpellRunnerViewController()
+        let settingsViewController = SettingsViewController()
         
         let spellTabBarItem = UITabBarItem()
         let spellRunnerTabBarItem = UITabBarItem()
+        let settingsTabBarItem = UITabBarItem()
         
         spellTabBarItem.title = "Spells"
         spellRunnerTabBarItem.title = "Run spell"
+        settingsTabBarItem.title = "Settings"
         
         spellTabBarItem.image = UIImage(systemName: "wand.and.stars")
         spellRunnerTabBarItem.image = UIImage(systemName: "wand.and.stars")
+        settingsTabBarItem.image = UIImage(systemName: "gear")
         
         spellsViewController.tabBarItem = spellTabBarItem
         spellRunnerViewController.tabBarItem = spellRunnerTabBarItem
+        settingsViewController.tabBarItem = settingsTabBarItem
                 
-        self.viewControllers = [spellsViewController, spellRunnerViewController]
+        self.viewControllers = [spellsViewController, spellRunnerViewController, settingsViewController]
                 
         self.selectedViewController = spellsViewController
         self.selectedIndex = 0

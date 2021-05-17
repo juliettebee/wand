@@ -55,8 +55,9 @@ func deleteSpell (spell: Spell) throws {
 func getAndRunSpell (_ points: [WPoint]) throws {
     let spells = try loadSpells()
     var found: Spell?
-    let maxScore = 30
     var same = false
+    let defaults = UserDefaults()
+    let maxScore = defaults.integer(forKey: "maxScore")
     
     // How spells are found:
     // Loop over all the spells
