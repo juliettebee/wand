@@ -104,7 +104,7 @@ extension SpellCreatorViewController : WandDelegate {
     }
     
     func disconnect () {
-        return
+        self.navigationController?.popViewController(animated: true)
     }
     
     func location (_ point: Point) {

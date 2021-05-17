@@ -45,6 +45,13 @@ func loadSpells () throws -> [Spell] {
     }
 }
 
+
+func deleteSpell (spell: Spell) throws {
+    let file = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(spell.name)
+    try FileManager.default.removeItem(at: file)
+}
+
+
 func getAndRunSpell (_ points: [WPoint]) throws {
     let spells = try loadSpells()
     var found: Spell?
