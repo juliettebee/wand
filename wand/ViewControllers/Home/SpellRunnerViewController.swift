@@ -37,7 +37,9 @@ extension SpellRunnerViewController : WandDelegate {
     }
     
     func disconnect() {
-        return
+        self.starting.toggle()
+        self.doSpellRecording.toggle()
+        self.record = []
     }
     
     func location(_ point: Point) {
@@ -66,6 +68,10 @@ extension SpellRunnerViewController : WandDelegate {
                 self.present(alert, animated: true, completion: nil)
             }
             print("Done")
+            self.starting.toggle()
+            self.doSpellRecording.toggle()
+            self.record = []
+            
         } else {
             self.starting.toggle()
             self.doSpellRecording.toggle()

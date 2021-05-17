@@ -16,6 +16,7 @@
 		869E9B3B26485E930081B2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 869E9B3A26485E930081B2A2 /* Assets.xcassets */; };
 		869E9B3E26485E930081B2A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869E9B3C26485E930081B2A2 /* LaunchScreen.storyboard */; };
 		869E9B4726485EAC0081B2A2 /* WandKit in Frameworks */ = {isa = PBXBuildFile; productRef = 869E9B4626485EAC0081B2A2 /* WandKit */; };
+		86A0C96B2652A2CE00EA66EC /* SpellRunnerErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A0C96A2652A2CE00EA66EC /* SpellRunnerErrors.swift */; };
 		86D80C9E26486ED800BBE936 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80C9D26486ED800BBE936 /* State.swift */; };
 		86D80CA126486FA000BBE936 /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CA026486FA000BBE936 /* ConnectingViewController.swift */; };
 		86D80CA326486FDF00BBE936 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D80CA226486FDF00BBE936 /* UIViewControllerExtensions.swift */; };
@@ -39,6 +40,7 @@
 		869E9B3A26485E930081B2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		869E9B3D26485E930081B2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		869E9B3F26485E930081B2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A0C96A2652A2CE00EA66EC /* SpellRunnerErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRunnerErrors.swift; sourceTree = "<group>"; };
 		86D80C9D26486ED800BBE936 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		86D80CA026486FA000BBE936 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		86D80CA226486FDF00BBE936 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				86D80C9D26486ED800BBE936 /* State.swift */,
 				86D80CB626487F2000BBE936 /* Spell.swift */,
 				8692C05B264ABCF900F67D90 /* WPoint.swift */,
+				86A0C96A2652A2CE00EA66EC /* SpellRunnerErrors.swift */,
 			);
 			path = "Structs and Enums";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				86D80C9E26486ED800BBE936 /* State.swift in Sources */,
 				86D80CAD264873F400BBE936 /* SpellsTableViewController.swift in Sources */,
 				86D80CA5264870C800BBE936 /* ConstraintExtension.swift in Sources */,
+				86A0C96B2652A2CE00EA66EC /* SpellRunnerErrors.swift in Sources */,
 				86D80CAF2648743300BBE936 /* SpellCreatorViewController.swift in Sources */,
 				86D80CA326486FDF00BBE936 /* UIViewControllerExtensions.swift in Sources */,
 				864517C3264DCED300FB285B /* SpellRunnerViewController.swift in Sources */,

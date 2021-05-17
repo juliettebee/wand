@@ -46,7 +46,6 @@ func loadSpells () throws -> [Spell] {
 }
 
 func getAndRunSpell (_ points: [WPoint]) throws {
-    // Loading spells
     let spells = try loadSpells()
     var found: Spell?
     let maxScore = 30
@@ -56,8 +55,8 @@ func getAndRunSpell (_ points: [WPoint]) throws {
     // Loop over all the spells
     // Loop over all points in the spell
     // Compare points, adding a score until they're the same
-    // If the score is less than the max score, add the pog
-    // If it's not, remove the pog
+    // If the score is less than the max score set same to yes
+    // If it's not, unset same
     
     // 🍝
     for spell in spells {
@@ -72,7 +71,7 @@ func getAndRunSpell (_ points: [WPoint]) throws {
             
             var i = 0
             while i < maxScore {
-                // I don't think i've included enough loops tbh
+                // I don't think i've included enough nested loops tbh
                 print(i)
                 var doneX = false
                 var doneY = false
@@ -111,26 +110,21 @@ func getAndRunSpell (_ points: [WPoint]) throws {
         }
     }
     
-    
     print(found ?? "Not found")
     
     if found == nil {
         return
     }
     
+    if URL(string: found!.url) == nil {
+        throw SpellRunnerErrors.badURL
+    }
     // Sending request
-    let url = URL(string: "https://")!
-    var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
+    let url = URL(string: found!.url)!
 
-    components.queryItems = [
-        URLQueryItem(name: "content", value: "Hello, spell")
-    ]
-
-    let query = components.url!.query
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
-    request.httpBody = Data(query!.utf8)
-    
+
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
         guard let data = data,
             let response = response as? HTTPURLResponse,
@@ -146,8 +140,7 @@ func getAndRunSpell (_ points: [WPoint]) throws {
         }
 
         let responseString = String(data: data, encoding: .utf8)
-        print("responseString = \(responseString)")
+        print("responseString = \(String(describing: responseString))")
     }
-
     task.resume()
 }
