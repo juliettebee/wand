@@ -26,7 +26,7 @@ class HomeViewController : UITabBarController {
         spellRunnerTabBarItem.title = "Run spell"
         settingsTabBarItem.title = "Settings"
         
-        spellTabBarItem.image = UIImage(systemName: "wand.and.stars")
+        spellTabBarItem.image = UIImage(systemName: "list.bullet")
         spellRunnerTabBarItem.image = UIImage(systemName: "wand.and.stars")
         settingsTabBarItem.image = UIImage(systemName: "gear")
         
